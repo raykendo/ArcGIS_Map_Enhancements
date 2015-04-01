@@ -10,7 +10,7 @@
 			", opacity",
 			", width",
 			", height",
-			";}"
+			" !important;}"
 		].join(" 3s ease 500ms"),
 		style = document.createElement("style");
 	style.type = "text/css";
