@@ -1,0 +1,78 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>ArcGIS Map Enhancements</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<style>
+		.jumbotron {
+			margin-top: 15px;
+			position: relative;
+		}
+		.updated::after  {
+			content: "Updated!!!";
+			color: #309C40;
+			background: #C6E1CB;
+			padding: 3px;
+			border-radius: 4px;
+			margin: 0 0 0 5px;
+		}
+		.new::after {
+			content: "NEW!!!";
+			color: #FF8000;
+			background: #FFD24C;
+			padding: 3px;
+			border-radius: 4px;
+			margin: 0 0 0 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<div class="jumbotron">
+		<a href="https://github.com/raykendo/ArcGIS_Map_Enhancements">
+			<img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-cerulean@2x.png" alt="Fork me on GitHub">
+		</a>
+		<h1>ArcGIS Map Enhancements</h1>
+		<p>A set of bookmarklets to improve your experience using maps generated with the <a href="https://developers.arcgis.com/javascript/">ArcGIS JavaScript API</a>.</p>
+		<div class="btn-container">
+			<p>
+				<a class="btn btn-lg btn-success" href="//github.com/raykendo/ArcGIS_Map_Enhancements" role="button">View Source</a>
+			</p>
+		</div>
+	</div>
+	
+	<p>
+		This page provides links to tools that can be used to inspect and improve your experiences with webmaps
+		generated with the ArcGIS JavaScript API. To use these tools:
+	</p>
+	<ol class="list-group">
+		<li class="list-group-item">Save the bookmarklets to your browser bookmarks.</li>
+		<li class="list-group-item">Navigate to a map created with the ArcGIS JavaScript API</li>
+		<li class="list-group-item">Select the bookmarklet from the list.</li>
+	</ol>
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h2 class="panel-title">Dependencies</h2>
+		</div>
+		<ul class="list-group">
+			<li class="list-group-item">Desktop browser (IE8+, Chrome, or Firefox. Untested on Safari for Mac).</li>
+		</ul>
+	</div>
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h2 class="panel-title">Tools</h2>
+			</div>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<h4 class="list-group-item-heading">Map Effects</h4>
+					<p class="list-group-item-text">
+						<a class="new" href='javascript:(function(){var head=document.head||document.getElementsByTagName("head")[0],css=[".map .container .layersDiv .layerTile, .map .container .layersDiv>div { -webkit-transition: -webkit-transform",", transform",", width",", height","; transition: -webkit-transform",", transform",", width",", height",";} .map .container .layersDiv>div>div {-webkit-transition: opacity",", transform",", -webkit-transform"," !important; transition: opacity",", transform",", -webkit-transform"," !important; }"].join(" 3s ease 500ms"),style=document.createElement("style");style.type="text/css";if(style.styleSheet){style.styleSheet.cssText=css;}else{style.appendChild(document.createTextNode(css));}head.appendChild(style);}());' title='Drunk Map'>Drunk Map</a><br />
+						Adds an extra delay and slowness when moving around on the map.
+					</p>
+				</li>	
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
