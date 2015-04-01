@@ -10,6 +10,9 @@
 			", opacity",
 			", width",
 			", height",
+			", top",
+			", left",
+			", clip",
 			" !important;}"
 		].join(" 3s ease 500ms"),
 		style = document.createElement("style");
